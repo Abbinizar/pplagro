@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html [
+  <!ENTITY % newTabDTD SYSTEM "chrome://browser/locale/newTab.dtd">
+  %newTabDTD;
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+  %browserDTD;
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  %globalDTD;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml" hasBrowserHandlers="true">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>New Tab</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/global.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/contentSearchUI.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/newTab_002.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/newTab.css" />
+</head>
+
+<body dir="ltr">
+  <div id="newtab-customize-overlay"></div>
+
+  <div class="newtab-customize-panel-container">
+    <div id="newtab-customize-panel" orient="vertical">
+        <div id="newtab-customize-panel-anchor"></div>
+        <div id="newtab-customize-panel-inner-wrapper">
+          <div id="newtab-customize-title" class="newtab-customize-panel-item">
+            <label>NEW TAB CONTROLS</label>
+          </div>
+
+          <div class="newtab-customize-complex-option">
+            <div id="newtab-customize-classic" class="newtab-customize-panel-superitem newtab-customize-panel-item selectable" selected="true">
+                <label>Show your top sites</label>
+            </div>
+            <div id="newtab-customize-enhanced" class="newtab-customize-panel-subitem" selected="true">
+                <label class="checkbox"></label>
+                <label>Include suggested sites</label>
+            </div>
+          </div>
+          <div id="newtab-customize-blank" class="newtab-customize-panel-item selectable">
+            <label>Show blank page</label>
+          </div>
+          <div id="newtab-customize-learn" class="newtab-customize-panel-item">
+            <label>Learn about New Tab</label>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="newtab-vertical-margin">
+    <div id="newtab-margin-top"></div>
+
+    <div id="newtab-margin-undo-container">
+      <div id="newtab-undo-container" undo-disabled="true">
+        <label id="newtab-undo-label">Thumbnail removed.</label>
+        <button id="newtab-undo-button" tabindex="-1" class="newtab-undo-button">Undo.</button>
+        <button id="newtab-undo-restore-button" tabindex="-1" class="newtab-undo-button">Restore All.</button>
+        <button id="newtab-undo-close-button" tabindex="-1" title="Hide"></button>
+      </div>
+    </div>
+
+    <div id="newtab-search-container">
+      <div id="newtab-search-form">
+        <div id="newtab-search-icon"></div>
+        <input name="q" id="newtab-search-text" aria-label="Search query" maxlength="256" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" placeholder="Search" type="text" />
+        <input id="newtab-search-submit" title="Submit search" value="▶" type="button" />
+      <table id="searchSuggestionTable" class="contentSearchSuggestionTable" role="presentation" hidden=""><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchDefaultEngineHeader"><img src="blob:null/5228b149-0087-42a3-a07f-442abb067258" />Google Search</td></tr><tr class="contentSearchSuggestionsContainer"><td class="contentSearchSuggestionsContainer"><table class="contentSearchSuggestionsList" role="listbox"></table></td></tr><table class="contentSearchOneOffsTable contentSearchSuggestionsContainer" role="group"><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchSearchWithHeader">Search with:</td></tr></table><button class="contentSearchSettingsButton contentSearchHeaderRow contentSearchHeader" id="contentSearchSettingsButton" aria-selected="false">Change Search Settings</button></table></div>
+    </div>
+
+    <div id="newtab-horizontal-margin">
+      <div class="newtab-side-margin"></div>
+      <div id="newtab-grid" style="width: 1240px; max-width: 1551px; height: 802px; max-height: 800px;">
+        <h1 id="topsites-heading">Your Top Sites</h1>
+      <div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="YouTube
+https://www.youtube.com/" href="https://www.youtube.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.youtube.com%2F&amp;revision=849&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">youtube.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="1CAK For Fun Only
+http://1cak.com/" href="http://1cak.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2F1cak.com%2F&amp;revision=3812&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">1cak.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="(1) WhatsApp
+https://web.whatsapp.com/" href="https://web.whatsapp.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fweb.whatsapp.com%2F&amp;revision=6486&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">web.whatsapp.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="fb - Penelusuran Google
+https://www.google.com/search?q=fb&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab" href="https://www.google.com/search?q=fb&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dfb%26ie%3Dutf-8%26oe%3Dutf-8%26client%3Dfirefox-b-ab&amp;revision=5770&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">google.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="LINE WEBTOON - Global Digital Free Comics Service Platform
+http://www.webtoons.com/id/" href="http://www.webtoons.com/id/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fwww.webtoons.com%2Fid%2F&amp;revision=340&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">webtoons.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Subscene - Passionate about good subtitles
+https://subscene.com/" href="https://subscene.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fsubscene.com%2F&amp;revision=1687&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">subscene.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="localhost / 127.0.0.1 | phpMyAdmin 4.5.1
+http://localhost/phpmyadmin/" href="http://localhost/phpmyadmin/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Flocalhost%2Fphpmyadmin%2F&amp;revision=4178&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">localhost</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Senimovie | Nonton Movie Online, Nonton Film Bioskop Terbaru
+http://www.senimovies.net/" href="http://www.senimovies.net/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fwww.senimovies.net%2F&amp;revision=2422&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">senimovies.net</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Download Drama Korea Subtitle Indonesia - DRAMAKOREA.WEB.ID
+http://dramakorea.web.id/" href="http://dramakorea.web.id/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fdramakorea.web.id%2F&amp;revision=4673&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">dramakorea.web.id</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Login - CAS – Central Authentication Service
+https://sso.unej.ac.id/cas/login?service=https%3A%2F%2Fsister.unej.ac.id%2Fsite%2Flogincas" href="https://sso.unej.ac.id/cas/login?service=https%3A%2F%2Fsister.unej.ac.id%2Fsite%2Flogincas">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fsso.unej.ac.id%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Fsister.unej.ac.id%252Fsite%252Flogincas&amp;revision=6887&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">sso.unej.ac.id</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Speedtest.net by Ookla - The Global Broadband Speed Test
+http://www.speedtest.net/" href="http://www.speedtest.net/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fwww.speedtest.net%2F&amp;revision=2435&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">speedtest.net</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="KaryaMuda
+file:///E:/KULIAH/SEM%205/WEB%20REF/TES/index.html#section-2" href="file:///E:/KULIAH/SEM%205/WEB%20REF/TES/index.html#section-2">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=file%3A%2F%2F%2FE%3A%2FKULIAH%2FSEM%25205%2FWEB%2520REF%2FTES%2Findex.html%23section-2&amp;revision=4769&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title"></span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Kotak Masuk (1.362) - nylachoirotunnisa@gmail.com - Gmail
+https://mail.google.com/mail/u/0/#inbox" href="https://mail.google.com/mail/u/0/#inbox">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%23inbox&amp;revision=4610&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">mail.google.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="PPL Gemastik - Google Dokumen
+https://docs.google.com/document/d/1MR7RKmBNuXpL_XeN327q4deO1qCJRqJGx0Lgq8pRLBM/edit" href="https://docs.google.com/document/d/1MR7RKmBNuXpL_XeN327q4deO1qCJRqJGx0Lgq8pRLBM/edit">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1MR7RKmBNuXpL_XeN327q4deO1qCJRqJGx0Lgq8pRLBM%2Fedit&amp;revision=165&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">docs.google.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="http://facebook.com/" href="http://facebook.com/">  <span class="newtab-thumbnail placeholder"></span>  <span class="newtab-thumbnail thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Ffacebook.com%2F&amp;revision=6460&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">facebook.com</span></a><input title="Pin this site at its current position" class="newtab-control newtab-control-pin" type="button" /><input title="Remove this site" class="newtab-control newtab-control-block" type="button" /><span class="newtab-suggested"></span></div></div></div>
+      <div class="newtab-side-margin"></div>
+    </div>
+
+    <div id="newtab-margin-bottom"></div>
+  </div>
+  <input id="newtab-customize-button" dir="ltr" value="⚙" title="Customize your New Tab page" type="button" />
+</body>
+<script type="text/javascript" src="New%20Tab_files/contentSearchUI.js"></script>
+<script type="text/javascript" src="New%20Tab_files/newTab.js"></script>
+</html>
