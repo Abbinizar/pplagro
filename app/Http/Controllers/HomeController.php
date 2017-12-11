@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\ternak;
 use App\user;
 use Auth;
+use App\investor
 
 class HomeController extends Controller
 {
