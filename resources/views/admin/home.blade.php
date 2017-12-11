@@ -3,7 +3,7 @@
 <!-- Middle Column -->
 <div class="w3-col m7">
 <div class="w3-container w3-card w3-white w3-round w3-margin">
-  SELAMAT DATANG DI TERNAK.IN
+  WELCOME TO TERNAK.IN
 </div>
    
 </div>
